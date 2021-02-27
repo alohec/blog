@@ -14,11 +14,11 @@ order = [".jpg$", ".gif$"]
 name = "alexlohec.com"
 URL = "s3://alexlohec.com?region=us-east-1"
 
-[[deployment.matchers]]
-#  Cache static assets for 1 year.
-pattern = "^.+\\.(js|css|svg|ttf)$"
-cacheControl = "max-age=31536000, no-transform, public"
-gzip = true
+# [[deployment.matchers]]
+# #  Cache static assets for 1 year.
+# pattern = "^.+\\.(js|css|svg|ttf)$"
+# cacheControl = "max-age=31536000, no-transform, public"
+# gzip = true
 
 # [[deployment.matchers]]
 # pattern = "^.+\\.(png|jpg)$"
