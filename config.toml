@@ -11,6 +11,7 @@ enableRobotsTXT = true
 order = [".jpg$", ".gif$"]
 
 [[deployment.targets]]
+name = "alexlohec.com"
 URL = "s3://alexlohec.com?region=us-east-1"
 
 [[deployment.matchers]]
