@@ -24,7 +24,7 @@ URL = "s3://alexlohec.com?region=us-east-1"
 # pattern = "^.+\\.(png|jpg)$"
 # cacheControl = "max-age=31536000, no-transform, public"
 # gzip = false
-# 
+#
 # [[deployment.matchers]]
 # pattern = "^.+\\.(html|xml|json)$"
 # gzip = true
