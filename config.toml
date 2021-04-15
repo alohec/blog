@@ -28,3 +28,11 @@ gzip = false
 [[deployment.matchers]]
 pattern = "^.+\\.(html|xml|json)$"
 gzip = true
+
+# [[params.nav.custom]]
+# title = "About"
+# url = "/about"
+
+[[params.nav.custom]]
+title = "Github"
+url = "https://github.com/alohec"
