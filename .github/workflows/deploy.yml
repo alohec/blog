@@ -27,7 +27,7 @@ jobs:
       #     HUGO_VERSION: 0.81.0
 
       - name: Hugo Build
-        run: hugo --minify
+        run: hugo
 
       - name: Deploy to S3
         if: github.ref == 'refs/heads/master'
