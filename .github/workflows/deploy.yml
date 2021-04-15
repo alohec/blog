@@ -10,6 +10,8 @@ jobs:
       # Checks out a copy of your repository on the ubuntu-latest machine
       - name: Checkout code
         uses: actions/checkout@v2
+      - name: Checkout submodules
+        uses: textbook/git-checkout-submodule-action@master
 
       # Sets up Hugo
       - name: Setup Hugo
@@ -31,7 +33,7 @@ jobs:
 
       - name: Deploy to S3
         if: github.ref == 'refs/heads/master'
-        run: hugo deploy
+        run: hugo deploy --force --maxDeletes -1
         env:
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
