@@ -32,7 +32,7 @@ gzip = true
 # [[params.nav.custom]]
 # title = "About"
 # url = "/about"
-
-[[params.nav.custom]]
-title = "Github"
-url = "https://github.com/alohec"
+# 
+# [[params.nav.custom]]
+# title = "Github"
+# url = "https://github.com/alohec"
